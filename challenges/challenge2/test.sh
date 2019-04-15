@@ -26,3 +26,4 @@ else
     fi
 fi
 
+awk '{if (NR!=1) {print $1"\t" $2"\t" $6, $7 "\t"$9, $10}}' sample1.tsv | grep /([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/ | grep "completed"
