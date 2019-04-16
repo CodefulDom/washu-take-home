@@ -30,4 +30,4 @@ fi
 awk '{if (NR!=1) {print $1"\t" $2"\t" $6, $7, $8, "\t"$9, $10}}' sample1.tsv | grep "completed" | grep 2015-03
 
 # Number Two
-awk '{print $1 "\t"  $2 "\t" $4, $5, $6}' sample2.tsv | grep completed | grep 2015-03
+awk '{print $1 "\t"  $2 "\t" $4, $5, $6}' sample2.tsv | grep "completed" | grep 2015-03
